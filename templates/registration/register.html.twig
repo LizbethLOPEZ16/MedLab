@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}EZ-CHECKIN | Register
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid h-75">
+        <div class="row justify-content-center align-items-center h-75">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-5 col-xl-5">
+                <div class="card p-4 shadow">
+                    <h3 class="card-title">Registrate</h3>
+
+                    {{ form_start(registrationForm) }}
+                    {{ form_start(personForm)}}
+                    {{ form_start(phoneForm)}}
+                    {{ form_widget(registrationForm) }}
+                    <div class="form-group">
+                        <label>Nombre Completo:</label>
+                        <div class="form-row">
+                            <div class="col-xs-12 col-md-6">
+                                {{ form_row(personForm.name) }}
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                {{ form_row(personForm.last_name) }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="mr-5">Fecha de Nacimiento:</label>
+                        <label class="pl-4 ml-1">Numero Telefonico:</label>
+                        <div class="form-row">
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-row">
+                                    <div class="col-xs-4">
+                                        {{ form_row(personForm.dob.year, {'label': false, 'help': 'Año', 'attr': {'class': 'form-control-lg'}}) }}
+                                    </div>
+                                    <div class="col-xs-4">
+                                        {{ form_row(personForm.dob.month, {'label': false, 'help': 'Mes', 'attr': {'class': 'form-control-lg'}}) }}
+                                    </div>
+                                    <div class="col-xs-4">
+                                        {{ form_row(personForm.dob.day, {'label': false, 'help': 'Dia', 'attr': {'class': 'form-control-lg'}}) }}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-2">
+                                {{ form_row(phoneForm.country_code) }}
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                {{ form_row(phoneForm.phone_number) }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Registrate</button>
+                    {{ form_end(personForm) }}
+                    {{ form_end(phoneForm) }}
+                    {{ form_end(registrationForm) }}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
