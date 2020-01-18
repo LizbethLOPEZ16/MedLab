@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Raleway", sans-serif;
+    color: #3d3d3d;
+}
+
+// Agregar margen derecho a todos los iconos para separar de texto
+.fa,
+.fas {
+    margin-right: 10px;
+}
+
+// Agregar margen derecho a los enlaces de navegacion
+.navbar-nav .nav-link {
+    margin-right: 10px;
+}
+b, strong {
+    font-weight: bolder;
+    padding-left: 50px;
+}
