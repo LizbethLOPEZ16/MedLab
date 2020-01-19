@@ -27,3 +27,12 @@ b, strong {
     font-weight: bolder;
     padding-left: 50px;
 }
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-left: 70px;
+}
