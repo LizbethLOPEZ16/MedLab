@@ -1,0 +1,26 @@
+{
+  "name": "MedLab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "sass": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LizbethLOPEZ16/EZ-CheckIn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LizbethLOPEZ16/EZ-CheckIn/issues"
+  },
+  "homepage": "https://github.com/LizbethLOPEZ16/EZ-CheckIn#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
